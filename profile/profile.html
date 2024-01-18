@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Enhanced Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="user_Name">Your Enhanced Profile</h1>
+    <nav>
+      <div class="navbar-links">
+        <a href="../home/index.html">Home</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Profile</a>
+        <a href="#" id="LogoutBtn">Logout</a>
+        <!-- <div class="dropdown-content">
+        </div> -->
+      </div>
+      <p id="navProfilePic"></p>
+    </nav>
+  </header>
+
+  <section id="about">
+    <!-- <img id="ProfilePic" src="../faiz.png" alt="Profile Picture"> -->
+    <div class="img" id="ProfilePic"></div>
+    <h2>About Me</h2>
+    <p id="PostText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy ligula volutpat ipsum. Suspendisse sagittis ultrices augue. Integer lacinia. Proin in tellus sit amet nibh dignissim sagittis. Duis tempor. Praesent dapibus. Nullam velit.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p id="postEmail">Email: your.email@example.com</p>
+    <p id="phoneNumber">#1234567890</p>
+
+    <div class="social-icons">
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+    <button id="editBtn">Edit Profile</button>
+  </section>
+
+
+  <div id="editProfileModal">
+    <h2>Edit Profile</h2>
+    <input id="firstNameEdit" type="text" placeholder="First Name">
+    <input id="lastNameEdit" type="text" placeholder="Last Name">
+    <input id="emailEdit" type="email" placeholder="Email">
+    <input id="phoneNumberEdit" type="tel" placeholder="Phone Number">
+    <input id="descrEdit" type="text" placeholder="Description">
+    <input id="profileEdit" type="file">
+    <button class="ok" id="saveChanges">OK</button>
+    <button class="cancel" id="closeEditProfileModal">Cancel</button>
+  </div>
+
+
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

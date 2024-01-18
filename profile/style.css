@@ -1,0 +1,299 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #45a049;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navbar-links {
+  display: flex;
+}
+#navProfilePic{
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+.dropdown {
+
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #45a049;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  animation: fadeInDown 0.5s ease;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-bottom: 1px solid #388e3c;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #388e3c;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+section {
+  max-width: 800px;
+  margin: 150px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease;
+  text-align: center;
+}
+#about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  transition: transform 0.3s ease;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+header:hover {
+  background-color: #388e3c;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+.social-icons a:hover {
+  color: #388e3c;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section,
+header,
+img,
+.social-icons a {
+  animation: fadeInUp 1s ease;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+}
+
+
+#editBtn {
+  position: relative;
+  top: 100px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#editBtn:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#editBtn {
+  animation: fadeIn 1s ease;
+}
+
+/* modal  */
+
+
+#editProfileModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button.cancel {
+  background-color: #aaa;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.cancel:hover {
+  background-color: #999;
+}
+
+button.ok {
+  background-color: #4CAF50;
+}
+
+button.ok:hover {
+  background-color: #45a049;
+}
+
+button,
+input {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button,
+input {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

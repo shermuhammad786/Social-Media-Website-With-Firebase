@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- like btn  -->
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+  <!-- <a href="../profile/profile.html">profile</a> -->
+
+    <!-- nav bar -->
+    <nav>
+      <h1>Social Media</h1>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="../profile/profile.html">Profile</a></li>
+      </ul>
+      <div class="dropdown" onclick="toggleDropdown()">
+        <button class="dropdown-btn for-all-color">
+            <img src="../assests/download.png alt="Dropdown Icon" class="icon" id="navbarUserProfile"> <span id="navbarUserName">Dropdown</span>
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="#" id="LogoutBtn">log out</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- message sender starts -->
+  <div class="main_container_message">
+    <div class="messageSender">
+      <div class="messageSender__top">
+        <img id="profileImageUser" class="user__avatar" src="../assests/download.png" />
+        <form>
+          <input class="messageSender__input" id="textInput" placeholder="What's on your mind?" type="text" />
+          <label class="Imagepost for-all-color" for="Imagepost">Image</label>
+          <button class="Imagepost for-all-color" id="post">Post</button>
+          <input id="Imagepost" type="file">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- message sender ends -->
+
+
+
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <!-- 1 of 3 -->
+      </div>
+      <div class="col-6 " id="postsDiv">
+
+
+
+
+      </div>
+      <div class="col">
+      
+        <!-- 3 of 3 -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- modal  -->
+  <div id="editProfileModal">
+    <h2>Edit Profile</h2>
+    <input class="modalInput" id="descrEdit" type="text" placeholder="Write Something">
+    <input class="modalInput" id="profileEdit" type="file">
+    <button class="ok modalBtn for-all-color" id="saveChanges">OK</button>
+    <button class="cancel modalBtn for-all-color" id="closeEditProfileModal">Cancel</button>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background: unset;
+    outline: none;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    background-color: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #ff9900 ;
+}
+.profilePic{
+    display: none;
+}
+.profilePicture{
+    padding: 10px;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.profilePicture:hover{
+    background-color: #fff;
+    color: #ff9900 ;
+    
+}
+a{
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: #fff;
+    color: #ff9900 ;
+}
